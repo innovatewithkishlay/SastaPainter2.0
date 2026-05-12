@@ -8,11 +8,16 @@ const config = {
     clientUrl: process.env.CLIENT_URL || 'http://localhost:5173',
     googleClientId: process.env.GOOGLE_CLIENT_ID,
     allowedOrigins: [
-        'http://localhost:5173',
-        'https://backendsp-mbzs.onrender.com',
-        'https://sastapainter.onrender.com',
-        process.env.CLIENT_URL
-    ].filter(Boolean)
+    'http://localhost:5173',
+    'https://backendsp-mbzs.onrender.com',
+    'https://sastapainter.onrender.com',
+
+    // MAIN DOMAIN
+    'https://www.sastapainter.in',
+    'https://sastapainter.in',
+
+    process.env.CLIENT_URL
+].filter(Boolean)
 };
 
 module.exports = config;
